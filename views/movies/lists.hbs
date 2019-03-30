@@ -1,3 +1,10 @@
+<form action = "/movies" method = "GET" class="form-inline">
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="text" class="form-control" placeholder="Search Movie..." name="search" value = "{{search}}">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">SEARCH</button>
+</form>
+
 <div class="d-flex flex-wrap justify-content-between pl-5 pr-5">
   {{#each movies as |movie|}}
   <div class="card ml-2 mr-2 mt-2 mb-2" style="width: 18rem;">
