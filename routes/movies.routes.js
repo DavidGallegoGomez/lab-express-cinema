@@ -5,7 +5,7 @@ const moviesController = require('../controllers/movies.controller');
 // TODO: list movies route
 
 router.get('/',moviesController.list);
-router.get('/movies/:id', moviesController.details)
+router.get('/:id', moviesController.details)
 // TODO: movie detail route
 
 module.exports = router;
